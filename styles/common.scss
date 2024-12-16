@@ -1,10 +1,12 @@
+@use "variables" as vars;
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-size: $font-size-base;
-  font-family: $font-family;
+  font-size: vars.$font-size-base;
+  font-family: vars.$font-family;
 }
 
 body {
@@ -23,7 +25,7 @@ body {
   max-width: 124rem;
   padding-top: 6rem;
 
-  @media all and (max-width: $media-m) {
+  @media all and (max-width: vars.$media-m) {
     padding-top: 3rem;
   }
 }
@@ -33,49 +35,49 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $font-family;
-  font-weight: $weight-medium;
+  font-family: vars.$font-family;
+  font-weight: vars.$weight-medium;
   margin: 0;
 }
 
 h1 {
-  font-size: $size-h1;
+  font-size: vars.$size-h1;
 
-  @media all and (max-width: $media-s) {
-    font-size: $size-h1-mob;
+  @media all and (max-width: vars.$media-s) {
+    font-size: vars.$size-h1-mob;
   }
 }
 
 h2 {
-  font-size: $size-h2;
+  font-size: vars.$size-h2;
 
-  @media all and (max-width: $media-s) {
-    font-size: $size-h2-mob;
+  @media all and (max-width: vars.$media-s) {
+    font-size: vars.$size-h2-mob;
   }
 }
 
 h3 {
-  font-size: $size-h3;
+  font-size: vars.$size-h3;
 
-  @media all and (max-width: $media-s) {
-    font-size: $size-h3-mob;
+  @media all and (max-width: vars.$media-s) {
+    font-size: vars.$size-h3-mob;
   }
 }
 
 h4 {
-  font-size: $size-h4;
+  font-size: vars.$size-h4;
 
-  @media all and (max-width: $media-s) {
-    font-size: $size-h4-mob;
+  @media all and (max-width: vars.$media-s) {
+    font-size: vars.$size-h4-mob;
   }
 }
 
 p {
-  font-size: $size-p;
+  font-size: vars.$size-p;
   margin: 0;
 
-  @media all and (max-width: $media-s) {
-    font-size: $size-p-mob;
+  @media all and (max-width: vars.$media-s) {
+    font-size: vars.$size-p-mob;
   }
 }
 
@@ -86,7 +88,7 @@ p {
   gap: 2rem 5rem;
   width: 100%;
 
-  @media all and (max-width: $media-m) {
+  @media all and (max-width: vars.$media-m) {
     column-gap: 3rem;
   }
 

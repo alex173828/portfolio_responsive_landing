@@ -1,3 +1,5 @@
+@use "variables" as vars;
+
 .menu {
   width: 2.4rem;
   display: none;
@@ -5,7 +7,7 @@
   position: relative;
   z-index: 2;
 
-  @media all and (max-width: $media-m) {
+  @media all and (max-width: vars.$media-m) {
     display: block;
   }
 }

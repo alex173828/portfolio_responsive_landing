@@ -1,11 +1,13 @@
+@use "variables" as vars;
+
 .nav {
   display: flex;
-  font-size: $size-btn;
+  font-size: vars.$size-btn;
   gap: 4rem;
   align-items: center;
   margin-left: auto;
 
-  @media all and (max-width: $media-m) {
+  @media all and (max-width: vars.$media-m) {
     position: fixed;
     right: 0;
     top: 0;
@@ -22,7 +24,7 @@
     transition: all 0.3s ease;
   }
 
-  @media all and (max-width: $media-s) {
+  @media all and (max-width: vars.$media-s) {
     max-width: 100%;
   }
 

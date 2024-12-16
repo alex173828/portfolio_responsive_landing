@@ -1,8 +1,10 @@
+@use "variables" as vars;
+
 .logo {
   width: 100%;
   max-width: 22rem;
 
-  @media all and (max-width: $media-m) {
+  @media all and (max-width: vars.$media-m) {
     max-width: 14.4rem;
   }
 

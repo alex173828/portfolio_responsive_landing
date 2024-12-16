@@ -1,9 +1,11 @@
+@use "variables" as vars;
+
 .header {
   display: flex;
   align-items: center;
   width: 100%;
 
-  @media all and (max-width: $media-m) {
+  @media all and (max-width: vars.$media-m) {
     padding: 0 2rem;
   }
 }
